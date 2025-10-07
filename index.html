@@ -56,7 +56,22 @@
     <img
     id="treetrunk-normal"
     src="assets\Bark_06_normal.jpg"
+    >
+
+    <img
+    id="sky"
+    src="assets\Sky.jpg"
+    >
+    <a-asset-item
+        id="chair"
+        src="assets\Chair.glb"
 >
+    </a-asset-item>
+    <a-asset-item
+        id="lamp"
+        src="assets\Standing_lamp.glb"
+>
+</a-asset-item>
 </a-assets>
     <a-plane
       material=
@@ -73,8 +88,8 @@
 >
     </a-plane>
     <a-sky
-      color="lightskyblue"
->
+        src="#sky"
+    >
     </a-sky>
     <a-mixin
       id="wallcolor"
@@ -227,7 +242,19 @@
         position="8 2 -6"
 >
 </a-sphere>
-
+    <a-entity
+        gltf-model="#chair"
+        position="-1.0 0 -10"
+        rotation="0 45 0"
+        scale="0.1 0.1 0.1"
+>
+    <a-entity
+        gltf-model="#lamp"
+        position="20 0 10"
+        scale="2 2 2"
+>
+</a-entity>
+</a-entity>
 </a-scene>
 </body>
 </html>
